@@ -6,17 +6,29 @@
 
 :root {
       --primary-color:rgb(254, 179, 41);
-      --background-color:rgb(219, 197, 201);
-      --text-color:lightgray;
+      --background-color:rgb(238, 224, 227);
+      --text-color:rgb(102, 102, 102);
 }
 
 header{
+      width: 100%;
       background-color: var(--background-color);
+}
+.main{
+      width: 100%;
 }
 .main nav{
       display: flex;
       justify-content: space-around;
       align-items: center;
+      padding: 80px;
+}
+.web-name{
+      font-size: 40px;
+      font-weight: 700;
+}
+.header-paragraph{
+      color: var(--text-color);
 }
 nav ul{
       display: flex;
@@ -29,4 +41,50 @@ li a{
       text-decoration: none;
       font-size: 20px;
       color: black;
+}
+.header-content{
+      text-align: center;
+      padding: 10px 230px;
+}
+.header-heading{
+      font-size: 4em;
+}
+.header-paragraph{
+      margin: 25px;
+      font-size: 18px;
+}
+.primary{
+      background-color: var(--primary-color);
+      border: none;
+      padding: 18px 30px;
+      color: white;
+      border-radius: 5px;
+}
+.main img{
+      width: 62%;
+      margin-left: 19%;
+      
+}
+
+            /* responsive */
+
+@media screen and (max-width: 576px) {
+      .main nav{
+            padding: 12px;
+      }
+      li{
+            padding: 7px;
+      }
+      .header-content {
+            padding: 10px 50px;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+      ul li {
+            padding: 10px;
+        }
+        .header-content {
+            padding: 10px 50px;
+        }
 }
